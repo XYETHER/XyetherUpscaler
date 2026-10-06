@@ -1,6 +1,6 @@
 # Release status
 
-The source and signed release candidate were reviewed on2026-10-06. The APK is not being published yet.
+The source and signed APK were reviewed on2026-10-06. The publisher chose to distribute this build as a beta. The findings below remain open; publication does not mean they were reproduced or fixed.
 
 ## What was checked
 
@@ -16,4 +16,4 @@ The supplied build report records successful release build and lint, a dedicated
 
 The comparison-dialog bitmap ownership fix is present in the reviewed source, but still needs device regression testing. Qualcomm runtime distribution remains subject to its vendor license. Artwork ownership/redistribution permission has not been documented in this bundle.
 
-The app targets Snapdragon8Gen1 and newer. Its ARM64 MNN path requires OpenCL/Vulkan GPU support and deliberately rejects CPU substitution. Do not describe it as universal or advertise6–11FPS as a cross-device guarantee.
+The app targets Snapdragon8Gen1 and newer. Its ARM64 MNN path requires OpenCL/Vulkan GPU support and deliberately rejects CPU substitution. Reported6–25FPS on Snapdragon8Gen3 includes Speed profiles and is not a cross-device guarantee. Speed models are beta and may shift colors.

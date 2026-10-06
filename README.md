@@ -9,7 +9,8 @@ Built for **Snapdragon 8 Gen 1 and newer**, with eight profiles for anime and re
 - Android 8.0 or newer, ARM64 only.
 - Snapdragon 8 Gen 1 and newer is the performance target, not a guarantee that every device has been tested.
 - Other chips require a compatible GPU driver. There is no CPU fallback, so this is **not a universal Android app**.
-- Developer-reported video speed: **6–11 FPS on Snapdragon 8 Gen 3**. The profile and resolution for that result have not yet been recorded; it is not a benchmark across all profiles or devices.
+- Reported video upscaling speed: **6–25 FPS on Snapdragon 8 Gen 3**, with the higher speeds reached using Speed profiles. Performance varies with the selected model, video resolution and device.
+- **Speed models are in beta and may cause color changes. They are not recommended; use Quality or Balanced profiles instead.**
 
 ## What it does
 
@@ -20,7 +21,7 @@ Built for **Snapdragon 8 Gen 1 and newer**, with eight profiles for anime and re
 
 ## Release status
 
-The source is public. An installable APK release is being reviewed: video cancellation and error handling need fixes, and the FFmpeg binary’s corresponding-source materials need to be established. No public APK is offered yet. See [RELEASE_READINESS.md](RELEASE_READINESS.md) for the remaining work.
+The app is in **beta** and has room for improvement. Download the APK from [Releases](https://github.com/XYETHER/XyetherUpscaler/releases). Feedback and device reports are welcome.
 
 ## Build
 
