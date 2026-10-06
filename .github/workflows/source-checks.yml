@@ -1,0 +1,21 @@
+name: Source and model checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check source catalog and model hashes
+        run: python tools/test_verify_release.py
+      - name: Check public upload hygiene
+        run: python tools/audit_upload.py
+# This workflow does not certify device inference, build native SDKs, sign APKs,
+# or resolve third-party source/license obligations.

@@ -1,0 +1,12 @@
+* text=auto
+*.java text eol=lf
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.py text eol=lf
+gradlew text eol=lf
+gradlew.bat text eol=crlf
+*.mnn binary
+*.dlc binary
+*.jar binary
+*.png binary
+*.pdf binary

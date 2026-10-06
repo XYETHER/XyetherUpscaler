@@ -1,0 +1,203 @@
+{
+  "catalog": [
+    {
+      "id": "QUICKSR_LARGE_INT8_BATCH8",
+      "label": "Xyether Anime Sharp Quality",
+      "stem": "2x_QuickSRNet_large_batch8_int8",
+      "mnn": "xyether_anime_sharp_quality.mnn",
+      "quant_scale": 0.003921568859,
+      "quant_offset": 0,
+      "batch": 8
+    },
+    {
+      "id": "IRL_QUALITY_INT8_BATCH8",
+      "label": "Xyether IRL Quality (Beta ⚠️)",
+      "stem": "2x_QuickSRNet_LARGE_IRL_batch8_int8",
+      "mnn": "xyether_irl_quality.mnn",
+      "quant_scale": 0.003921568859,
+      "quant_offset": 0,
+      "batch": 8
+    },
+    {
+      "id": "SOFTV2_QUALITY_INT8_BATCH8",
+      "label": "Xyether Anime Soft V2 Quality",
+      "stem": "2x_QuickSRNet_LARGE_Softv2_batch8_int8",
+      "mnn": "xyether_soft_v2_quality.mnn",
+      "quant_scale": 0.003921568859,
+      "quant_offset": 0,
+      "batch": 8
+    },
+    {
+      "id": "QUICKSR_MEDIUM_INT8_BATCH8",
+      "label": "Xyether Anime Sharp Balanced",
+      "stem": "2x_QuickSRNet_medium_StrongV4_balanced_batch8_int8",
+      "mnn": "xyether_anime_sharp_balanced.mnn",
+      "quant_scale": 0.003921568859,
+      "quant_offset": 0,
+      "batch": 8
+    },
+    {
+      "id": "QUICKSR_SMALL_PTQ_INT8",
+      "label": "Xyether Anime Sharp Speed (BETA ⚠️)",
+      "stem": "2x_QuickSRNet_small_StrongV4_batch16_ptq_int8",
+      "mnn": "xyether_anime_sharp_speed.mnn",
+      "quant_scale": 0.003913909197,
+      "quant_offset": 0,
+      "batch": 16
+    },
+    {
+      "id": "QUICKSR_RARV3_PTQ_INT8",
+      "label": "Xyether Anime Soft Quality",
+      "stem": "2x_QuickSRNet_large_RARv3_batch8_ptq_int8",
+      "mnn": "xyether_anime_soft_quality.mnn",
+      "quant_scale": 0.003913909197,
+      "quant_offset": 0,
+      "batch": 8
+    },
+    {
+      "id": "QUICKSR_MEDIUM_RARV3_BALANCED",
+      "label": "Xyether Anime Soft Balanced",
+      "stem": "2x_QuickSRNet_medium_RARv3_balanced_batch8_int8",
+      "mnn": "xyether_anime_soft_balanced.mnn",
+      "quant_scale": 0.003921568859,
+      "quant_offset": 0,
+      "batch": 8
+    },
+    {
+      "id": "QUICKSR_SMALL_RARV3_PTQ_INT8",
+      "label": "Xyether Anime Soft Speed (BETA ⚠️)",
+      "stem": "2x_QuickSRNet_small_RARv3_batch16_ptq_int8",
+      "mnn": "xyether_anime_soft_speed.mnn",
+      "quant_scale": 0.003913909197,
+      "quant_offset": 0,
+      "batch": 16
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "app/src/main/assets/models/2x_QuickSRNet_large_batch8_int8_group1.dlc",
+      "bytes": 505032,
+      "sha256": "df8eb20c316ea901f68401bc48354800cc021113c7c79cbd3adcb59ed083da19"
+    },
+    {
+      "path": "app/src/main/assets/models/2x_QuickSRNet_large_batch8_int8_group2.dlc",
+      "bytes": 505032,
+      "sha256": "df8eb20c316ea901f68401bc48354800cc021113c7c79cbd3adcb59ed083da19"
+    },
+    {
+      "path": "app/src/main/assets/models/2x_QuickSRNet_LARGE_IRL_batch8_int8_group1.dlc",
+      "bytes": 460664,
+      "sha256": "1ea1928a898f0a754635582e644a99c78214264164d39a38fd653613d14c8d79"
+    },
+    {
+      "path": "app/src/main/assets/models/2x_QuickSRNet_LARGE_IRL_batch8_int8_group2.dlc",
+      "bytes": 460664,
+      "sha256": "1ea1928a898f0a754635582e644a99c78214264164d39a38fd653613d14c8d79"
+    },
+    {
+      "path": "app/src/main/assets/models/2x_QuickSRNet_large_RARv3_batch8_ptq_int8_group1.dlc",
+      "bytes": 504928,
+      "sha256": "d8fc2ea5742a985aac450bb63827a0420cc6904754818e7208da9cd3e23c0457"
+    },
+    {
+      "path": "app/src/main/assets/models/2x_QuickSRNet_large_RARv3_batch8_ptq_int8_group2.dlc",
+      "bytes": 504928,
+      "sha256": "d8fc2ea5742a985aac450bb63827a0420cc6904754818e7208da9cd3e23c0457"
+    },
+    {
+      "path": "app/src/main/assets/models/2x_QuickSRNet_LARGE_Softv2_batch8_int8_group1.dlc",
+      "bytes": 460688,
+      "sha256": "b48a1049b44da51683076254bd8fee28cb5f4cd89691952be6f5745e7757cf67"
+    },
+    {
+      "path": "app/src/main/assets/models/2x_QuickSRNet_LARGE_Softv2_batch8_int8_group2.dlc",
+      "bytes": 460688,
+      "sha256": "b48a1049b44da51683076254bd8fee28cb5f4cd89691952be6f5745e7757cf67"
+    },
+    {
+      "path": "app/src/main/assets/models/2x_QuickSRNet_medium_RARv3_balanced_batch8_int8_group1.dlc",
+      "bytes": 79344,
+      "sha256": "5193c95e2094b09a80e92513ef8246bb5da4b0cf4a517b14ee30b1d6ca873ee7"
+    },
+    {
+      "path": "app/src/main/assets/models/2x_QuickSRNet_medium_RARv3_balanced_batch8_int8_group2.dlc",
+      "bytes": 79344,
+      "sha256": "5193c95e2094b09a80e92513ef8246bb5da4b0cf4a517b14ee30b1d6ca873ee7"
+    },
+    {
+      "path": "app/src/main/assets/models/2x_QuickSRNet_medium_StrongV4_balanced_batch8_int8_group1.dlc",
+      "bytes": 79344,
+      "sha256": "18dc37834ee6a1d552918f68c377b12a10097e919a35938218464508994e3a77"
+    },
+    {
+      "path": "app/src/main/assets/models/2x_QuickSRNet_medium_StrongV4_balanced_batch8_int8_group2.dlc",
+      "bytes": 79344,
+      "sha256": "18dc37834ee6a1d552918f68c377b12a10097e919a35938218464508994e3a77"
+    },
+    {
+      "path": "app/src/main/assets/models/2x_QuickSRNet_small_RARv3_batch16_ptq_int8_group1.dlc",
+      "bytes": 50760,
+      "sha256": "3edf2b79d4ed5589d620f32aaf8f08a31cef6134c016791257a1d28074ed0d2a"
+    },
+    {
+      "path": "app/src/main/assets/models/2x_QuickSRNet_small_RARv3_batch16_ptq_int8_group2.dlc",
+      "bytes": 50760,
+      "sha256": "3edf2b79d4ed5589d620f32aaf8f08a31cef6134c016791257a1d28074ed0d2a"
+    },
+    {
+      "path": "app/src/main/assets/models/2x_QuickSRNet_small_StrongV4_batch16_ptq_int8_group1.dlc",
+      "bytes": 50736,
+      "sha256": "d1ad610215aebc7626feba555a813d3854d5b63b8dc46afa0b0238af40224290"
+    },
+    {
+      "path": "app/src/main/assets/models/2x_QuickSRNet_small_StrongV4_batch16_ptq_int8_group2.dlc",
+      "bytes": 50736,
+      "sha256": "d1ad610215aebc7626feba555a813d3854d5b63b8dc46afa0b0238af40224290"
+    },
+    {
+      "path": "app/src/main/assets/models/README.txt",
+      "bytes": 583,
+      "sha256": "a28cec188680d212080b94b554d25198db608b0e64b4ece16df846577fc57cd4"
+    },
+    {
+      "path": "app/src/main/assets/mnn/xyether_anime_sharp_balanced.mnn",
+      "bytes": 205564,
+      "sha256": "2c4adddd331a60ef55571cf9cf3803290c6b4657e74f5816f62d3bc7bcdf8496"
+    },
+    {
+      "path": "app/src/main/assets/mnn/xyether_anime_sharp_quality.mnn",
+      "bytes": 1668220,
+      "sha256": "0b753da2ffe34a4e8c840611c9ab1ece5ad9e398ac95858e9eed536f226a5bbd"
+    },
+    {
+      "path": "app/src/main/assets/mnn/xyether_anime_sharp_speed.mnn",
+      "bytes": 94944,
+      "sha256": "98fab74e23a19c9307a166dcd2b5679cfc15c2e8a802903685e1840cee71d1e5"
+    },
+    {
+      "path": "app/src/main/assets/mnn/xyether_anime_soft_balanced.mnn",
+      "bytes": 205564,
+      "sha256": "eb61b237b67276cc53dbc9b9f6acc2947989518e62bfe88021b53ee7a98458a0"
+    },
+    {
+      "path": "app/src/main/assets/mnn/xyether_anime_soft_quality.mnn",
+      "bytes": 1668220,
+      "sha256": "95623a2b451a4625017d41f4448e3cdae74671b0c57135b71e887516e41fb1b2"
+    },
+    {
+      "path": "app/src/main/assets/mnn/xyether_anime_soft_speed.mnn",
+      "bytes": 94944,
+      "sha256": "2cc3ce17bcb9e6bf52748096d3ae866680ff50cbee24d39c6abe5f80b6984c4e"
+    },
+    {
+      "path": "app/src/main/assets/mnn/xyether_irl_quality.mnn",
+      "bytes": 1665428,
+      "sha256": "3c322b23876869298bd419d803f0a9755cc5da90a498e80a35aecc1884d24b2e"
+    },
+    {
+      "path": "app/src/main/assets/mnn/xyether_soft_v2_quality.mnn",
+      "bytes": 1665428,
+      "sha256": "2c20951bc9a0d0f1350da9dd4cb8a7eb3830f2c877a6714131b6e17dd34b6557"
+    }
+  ]
+}

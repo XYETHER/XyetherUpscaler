@@ -1,0 +1,17 @@
+<resources>
+    <style name="Base.Theme.XyetherFastUpscaler" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/xyether_primary</item>
+        <item name="colorPrimaryVariant">@color/xyether_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorAccent">@color/xyether_primary</item>
+        <item name="colorSurface">@color/xyether_surface</item>
+        <item name="colorOnSurface">@color/xyether_text</item>
+        <item name="android:colorBackground">@color/xyether_background</item>
+        <item name="android:navigationBarColor">@color/xyether_background</item>
+        <item name="android:statusBarColor">@color/xyether_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:fontFamily">sans</item>
+    </style>
+
+    <style name="Theme.XyetherFastUpscaler" parent="Base.Theme.XyetherFastUpscaler" />
+</resources>

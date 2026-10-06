@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Needed only for saving to MediaStore on Android 8–9. Modern picker URIs
+         and MediaStore output require no broad storage permission. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+
+    <!-- Explicit package visibility for the optional Samsung Gallery picker. -->
+    <queries>
+        <package android:name="com.sec.android.gallery3d" />
+    </queries>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/xyether_icon"
+        android:label="Xyether Upscaler"
+        android:roundIcon="@drawable/xyether_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.XyetherFastUpscaler"
+        android:hardwareAccelerated="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Lets an ordinary app reach the vendor FastRPC services used by QNN HTP. -->
+        <uses-native-library
+            android:name="libadsprpc.so"
+            android:required="false" />
+        <uses-native-library
+            android:name="libcdsprpc.so"
+            android:required="false" />
+    </application>
+
+</manifest>

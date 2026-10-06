@@ -1,0 +1,6 @@
+<resources>
+    <!-- API 29+: retain the app-owned light palette even when system dark mode is enabled. -->
+    <style name="Theme.XyetherFastUpscaler" parent="Base.Theme.XyetherFastUpscaler">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="xyether_background">#FFF8F7FC</color>
+    <color name="xyether_surface">#FFFFFFFF</color>
+    <color name="xyether_surface_soft">#FFF1EFF8</color>
+    <color name="xyether_preview">#FFECE9F5</color>
+    <color name="xyether_primary">#FF5B16D4</color>
+    <color name="xyether_primary_dark">#FF4310A7</color>
+    <color name="xyether_primary_soft">#FFEAE2FC</color>
+    <color name="xyether_text">#FF211A2A</color>
+    <color name="xyether_text_muted">#FF716A79</color>
+    <color name="xyether_outline">#FFD7D0E3</color>
+    <color name="xyether_success">#FF20724B</color>
+    <color name="xyether_danger">#FFB3261E</color>
+</resources>

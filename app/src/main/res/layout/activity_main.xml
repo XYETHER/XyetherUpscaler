@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xyether_background"
+    android:fitsSystemWindows="true"
+    android:paddingStart="20dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="12dp">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            app:cardBackgroundColor="@color/xyether_primary_soft"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="0dp">
+            <ImageView
+                android:id="@+id/app_logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Xyether Upscaler"
+                android:padding="3dp"
+                android:src="@drawable/ic_logo" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xyether Upscaler"
+                android:textColor="@color/xyether_text"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="Local anime restoration"
+                android:textColor="@color/xyether_text_muted"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_settings"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Settings"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_menu_preferences"
+            app:tint="@color/xyether_primary" />
+
+        <ImageButton
+            android:id="@+id/btn_info"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="About Xyether Upscaler"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_dialog_info"
+            app:tint="@color/xyether_primary" />
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/action_bar"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/xyether_surface"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/xyether_outline"
+        app:strokeWidth="1dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_abort"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="Stop processing"
+                android:insetBottom="0dp"
+                android:insetTop="0dp"
+                android:padding="0dp"
+                android:visibility="gone"
+                app:backgroundTint="@color/xyether_danger"
+                app:cornerRadius="15dp"
+                app:icon="@android:drawable/ic_menu_close_clear_cancel"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="24dp"
+                app:iconTint="@color/white" />
+            <TextView
+                android:id="@+id/action_processing_label"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="6dp"
+                android:text="Upscaling in progress"
+                android:textColor="@color/xyether_text"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_weight="1" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_run"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="Start upscale"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/xyether_primary"
+                app:cornerRadius="15dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:id="@+id/content_scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/action_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/preview_card"
+                android:layout_width="match_parent"
+                android:layout_height="252dp"
+                app:cardBackgroundColor="@color/xyether_preview"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/xyether_outline"
+                app:strokeWidth="1dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <VideoView
+                        android:id="@+id/video_preview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+                    <ImageView
+                        android:id="@+id/live_preview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="Selected or latest upscaled media preview"
+                        android:scaleType="fitCenter"
+                        android:visibility="gone" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|start"
+                        android:layout_margin="14dp"
+                        android:background="@color/xyether_surface"
+                        android:paddingStart="10dp"
+                        android:paddingTop="6dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="6dp"
+                        android:text="VIEWFINDER"
+                        android:textColor="@color/xyether_primary"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/video_status_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Import a video or image to begin"
+                        android:textColor="@color/xyether_text_muted"
+                        android:textSize="15sp" />
+                </FrameLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_open"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:text="Video"
+                    android:textAllCaps="false"
+                    android:textColor="@color/xyether_primary"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/xyether_primary_soft"
+                    app:cornerRadius="15dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_open_image"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:text="Image"
+                    android:textAllCaps="false"
+                    android:textColor="@color/xyether_primary"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/xyether_primary_soft"
+                    app:cornerRadius="15dp" />
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/xyether_surface"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/xyether_outline"
+                app:strokeWidth="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upscale profile"
+                        android:textColor="@color/xyether_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Choose the restoration look and input scale"
+                        android:textColor="@color/xyether_text_muted"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:id="@+id/model_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:hint="Model"
+                        app:boxBackgroundColor="@color/xyether_surface"
+                        app:boxCornerRadiusBottomEnd="14dp"
+                        app:boxCornerRadiusBottomStart="14dp"
+                        app:boxCornerRadiusTopEnd="14dp"
+                        app:boxCornerRadiusTopStart="14dp"
+                        app:boxStrokeColor="@color/xyether_primary">
+                        <AutoCompleteTextView
+                            android:id="@+id/spinner_model"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            android:textColor="@color/xyether_text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                        android:id="@+id/dlss_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="Input scale"
+                        app:boxBackgroundColor="@color/xyether_surface"
+                        app:boxCornerRadiusBottomEnd="14dp"
+                        app:boxCornerRadiusBottomStart="14dp"
+                        app:boxCornerRadiusTopEnd="14dp"
+                        app:boxCornerRadiusTopStart="14dp"
+                        app:boxStrokeColor="@color/xyether_primary">
+                        <AutoCompleteTextView
+                            android:id="@+id/spinner_dlss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="none"
+                            android:textColor="@color/xyether_text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/progress_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/xyether_primary_soft"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+                    <TextView
+                        android:id="@+id/status_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/xyether_text"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/progress_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="9dp"
+                        app:indicatorColor="@color/xyether_primary"
+                        app:trackColor="@color/xyether_surface"
+                        app:trackCornerRadius="4dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

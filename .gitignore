@@ -1,0 +1,25 @@
+# Local state and generated artifacts
+.gradle/
+.idea/
+.hermes/
+**/build/
+**/.cxx/
+local.properties
+*.iml
+__pycache__/
+*.pyc
+.env
+.env.*
+*.jks
+*.keystore
+*.p12
+*.pfx
+*signing-private*
+*.apk
+*.aab
+*.log
+# Dependencies restored locally, never publish standalone vendor runtime
+app/src/main/cpp/External/MNN/
+app/src/main/cpp/External/QAIAppBuilder/*.so
+app/src/main/assets/qnnlibs/
+app/src/main/jniLibs/

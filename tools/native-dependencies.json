@@ -1,0 +1,265 @@
+{
+  "qairt_version": "2.49.0.260730",
+  "mnn_commit": "4d40bdbd7efb73a58383bb5da867a6f41eb1776e",
+  "mnn_url": "https://github.com/alibaba/MNN.git",
+  "artifacts": [
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtp.so",
+      "sha256": "a09b3af28342331b3ec9e57ecbe42bfe54a5fff37c4323ce5685c395ae3ee604",
+      "bytes": 3786064,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnHtp.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpNetRunExtensions.so",
+      "sha256": "2e038b85fbfaa7b79dda04cb6d4bbaf14418aec7565dba3d412480170e141a1d",
+      "bytes": 1089560,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnHtpNetRunExtensions.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpOptraceProfilingReader.so",
+      "sha256": "25801d22dc612688171f021d15c6b068f14c269fa703095cef8089e8fb78297d",
+      "bytes": 4113320,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnHtpOptraceProfilingReader.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpPrepare.so",
+      "sha256": "db0a4c4811fe0947f6f237978190cbaf4cea8fa8bd607ea14fda67d375403c9e",
+      "bytes": 79343040,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnHtpPrepare.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpProfilingReader.so",
+      "sha256": "5bad57d3c16bab9bec944bda964f54cbf9ee435ec80b91c90c7738d71bf6c53e",
+      "bytes": 639432,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnHtpProfilingReader.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV68.so",
+      "sha256": "b29323082e146d4e67f7f4fdff7f188af9757cdcae342fb75234f929ece09792",
+      "bytes": 10896708,
+      "sdk_candidates": [
+        "lib/hexagon-v68/unsigned/libQnnHtpV68.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV68CalculatorStub.so",
+      "sha256": "d9b01cde448d15b3a954cfa312700189a320e7ee918fd762f425dddee9b103c9",
+      "bytes": 250872,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnHtpV68CalculatorStub.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV68Skel.so",
+      "sha256": "558985d5fc085a4d914e3e95a9793ce619459b911f7f4be80baa94dbd93ab745",
+      "bytes": 10508188,
+      "sdk_candidates": [
+        "lib/hexagon-v68/unsigned/libQnnHtpV68Skel.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV68Stub.so",
+      "sha256": "3a06c050a2ad86d7bc5d94a033ef87d19b5c535a966d0fa2256d13edc36c632b",
+      "bytes": 764112,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnHtpV68Stub.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV69.so",
+      "sha256": "6156624df15b6eb4c72b8c4a4fed2223fe81459ced89c9bac81409713907088e",
+      "bytes": 12259012,
+      "sdk_candidates": [
+        "lib/hexagon-v69/unsigned/libQnnHtpV69.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV69CalculatorStub.so",
+      "sha256": "b3472a9a343ccdf61d1d72b0473cf923ac6be700698df05ea542083acd7cd3fb",
+      "bytes": 250872,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnHtpV69CalculatorStub.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV69Skel.so",
+      "sha256": "52f6dfb52948ade825bda873368a85b3ede8b2319f162e34c4eda414321cba9c",
+      "bytes": 11862428,
+      "sdk_candidates": [
+        "lib/hexagon-v69/unsigned/libQnnHtpV69Skel.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV69Stub.so",
+      "sha256": "f44049ae18d1f550f5e349f905624a365c8ad2a27403baf7970ee68372cb933b",
+      "bytes": 764672,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnHtpV69Stub.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV73.so",
+      "sha256": "c80ca2671f341e523ab5d05d235baf6182b844fa5c49ad655bcbe0b87c8af128",
+      "bytes": 12236024,
+      "sdk_candidates": [
+        "lib/hexagon-v73/unsigned/libQnnHtpV73.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV73CalculatorStub.so",
+      "sha256": "5f8efdc0e8a271e19e1bb44c3a0ec3efe6c159e536ffca16af8fb98916b52008",
+      "bytes": 250872,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnHtpV73CalculatorStub.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV73Skel.so",
+      "sha256": "bd54463547f0234d06045699b1f747b7d9d3e3b581874840af50c295b3124f25",
+      "bytes": 11859192,
+      "sdk_candidates": [
+        "lib/hexagon-v73/unsigned/libQnnHtpV73Skel.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV73Stub.so",
+      "sha256": "2912cc4f29cc5163c36c6c58f931bd08b798ccf8545a670a9498549f95b9036f",
+      "bytes": 771928,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnHtpV73Stub.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV75.so",
+      "sha256": "f368f594d7531b1b5c52664e55daf6cbb18a1ca3e40c46f2ccaa222eb6c6aa99",
+      "bytes": 12240120,
+      "sdk_candidates": [
+        "lib/hexagon-v75/unsigned/libQnnHtpV75.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV75CalculatorStub.so",
+      "sha256": "3a8ed97a62ec4185d7fa1a2016c2547bf2946b655023e0ae93727eb4bc99e0dc",
+      "bytes": 250872,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnHtpV75CalculatorStub.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV75Skel.so",
+      "sha256": "6202bf053a3f5d889c24ff4ff1241eb4ed4da0fa8259714705cdfc0c43b938e7",
+      "bytes": 11863292,
+      "sdk_candidates": [
+        "lib/hexagon-v75/unsigned/libQnnHtpV75Skel.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV75Stub.so",
+      "sha256": "0e9e8e4ac7e8803686da7122159aa3d2020be59be88fdc13209fb949f7cd0a34",
+      "bytes": 771928,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnHtpV75Stub.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV79.so",
+      "sha256": "756c97ca10bd9f275cbc95b53562cdc4da3a18b7b5362aefb180b4d0ee731866",
+      "bytes": 12414584,
+      "sdk_candidates": [
+        "lib/hexagon-v79/unsigned/libQnnHtpV79.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV79CalculatorStub.so",
+      "sha256": "8b29e81e498dfecbe4729ebd9cd208fc18f9fe6e4f8c97643ca2a967b4227861",
+      "bytes": 250872,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnHtpV79CalculatorStub.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV79Skel.so",
+      "sha256": "a2e4f67567a6484b20de557809dd5c1f6dfe9af658a820cd351bcfa7a6b26777",
+      "bytes": 12038356,
+      "sdk_candidates": [
+        "lib/hexagon-v79/unsigned/libQnnHtpV79Skel.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV79Stub.so",
+      "sha256": "2f61eb5be87b72878e7c2f66ec1967ce34abaa4e6ff25eadcef9212b958cbcbb",
+      "bytes": 771928,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnHtpV79Stub.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV81.so",
+      "sha256": "15f64ead7aeb0071fb1e5d7e9a9b46ec97ea9bc9d10c4c65c82eb7a7732d4aac",
+      "bytes": 13327064,
+      "sdk_candidates": [
+        "lib/hexagon-v81/unsigned/libQnnHtpV81.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV81CalculatorStub.so",
+      "sha256": "a08b8cf31c23f9c138c61266b665f1f9f250c5b66a22ec6314ec9e3046db3a6d",
+      "bytes": 250872,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnHtpV81CalculatorStub.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV81Skel.so",
+      "sha256": "60d1b390af49b088e17100159228dcd6d4e4d4739cd48285c09b499c21db7633",
+      "bytes": 12955184,
+      "sdk_candidates": [
+        "lib/hexagon-v81/unsigned/libQnnHtpV81Skel.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnHtpV81Stub.so",
+      "sha256": "5141db13292e27761b9f9ca3a61e3e6ce5be468191971b33005b6b929ad99c9a",
+      "bytes": 796080,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnHtpV81Stub.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/assets/qnnlibs/libQnnSystem.so",
+      "sha256": "536201ed918f4066f9ef35671198c072faf9ef04af24545f5fae0fc79aa05baa",
+      "bytes": 4072160,
+      "sdk_candidates": [
+        "lib/aarch64-android/libQnnSystem.so"
+      ]
+    },
+    {
+      "destination": "app/src/main/jniLibs/arm64-v8a/libandroidx.graphics.path.so",
+      "sha256": "41e9a793c43a0f4fddb19e33f346bace464f30f888ba7b9eaf96294ea115bfb6",
+      "bytes": 10096,
+      "sdk_candidates": [],
+      "maven_aar": {
+        "group": "androidx.graphics",
+        "artifact": "graphics-path",
+        "version": "1.0.1",
+        "entry": "jni/arm64-v8a/libandroidx.graphics.path.so"
+      }
+    },
+    {
+      "destination": "app/src/main/cpp/External/QAIAppBuilder/libappbuilder.so",
+      "sha256": "4e1f84981960fd2751cd0fe8d6c9e3ebd1b0465b5d3ac35492a3669325e55070",
+      "bytes": 1276656,
+      "appbuilder": true
+    }
+  ]
+}

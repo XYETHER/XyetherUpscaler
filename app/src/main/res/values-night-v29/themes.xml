@@ -1,0 +1,6 @@
+<resources>
+    <!-- Night qualifier deliberately remains light; force-dark is API-29 gated. -->
+    <style name="Theme.XyetherFastUpscaler" parent="Base.Theme.XyetherFastUpscaler">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>
